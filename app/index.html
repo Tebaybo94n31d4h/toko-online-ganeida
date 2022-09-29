@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>403 Forbidden</title>
+</head>
+<body>
+
+<p>Directory access is forbidden.</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Buat dua kolom yang sama yang mengapung di samping satu sama lain */
+		.column {
+			float: left;
+			width: 50%;
+			padding: 10px;
+			height: 300px;
+			/* Hanya untuk contoh */
+		}
+
+		/* Hapus floats setelah columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive layout - membuat dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain */
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<h2>Contoh Responsive Two Column Layout</h2>
+	<p>Ubah ukuran jendela browser untuk melihat efek responsif (kolom akan menumpuk satu sama lain alih-alih mengambang
+		berdampingan, saat layar kurang dari 600 piksel lebar).</p>
+
+	<div class="row">
+		<div class="column" style="background-color:#8FBC8F;">
+			<h2>Kolom 1</h2>
+			<p>contoh teks....</p>
+		</div>
+		<div class="column" style="background-color:#2F4F4F;">
+			<h2>Kolom 2</h2>
+			<p>contoh teks....</p>
+		</div>
+	</div>
+
+</body>
+
+</html>
